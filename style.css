@@ -200,6 +200,8 @@ font-style: Extra Bold;
     display: flex;
     justify-content: center;
     gap: 15px;
+    font-family: Inter;
+font-style: Semi Bold;
 }
 
 .btn {
