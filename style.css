@@ -49,6 +49,7 @@
     padding: 10px 22px;
     border-radius: 25px;
     background: linear-gradient(45deg, #F7E93F, #ff3cac, #784ba0);
+
 }
 
 /* responsible for small device 576px */
@@ -76,6 +77,7 @@
 }
 
 /* responsible for large device 992px */
+
 @media (min-width: 992px) {
 
     .navbar {
@@ -93,4 +95,356 @@
     /* .navbar::after {
     content: "";
   } */
+}
+
+/* the complex hero section */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(26, 11, 46, 1);
+    
+}
+
+.hero-bg .wave-bg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.hero-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* position: absolute; */
+
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    box-sizing: border-box;
+    border: 8px solid rgba(42, 24, 108, 1);
+}
+
+.hero-circle img {
+    width: 60px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: -10px;
+    background: #1aff7c;
+    color: #000;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.spotify {
+    background: linear-gradient(45deg, #ff3cac, #fcb045);
+    color: #fff;
+}
+
+.subscribe {
+    border: 2px solid #1aff7c;
+    color: #1aff7c;
+}
+/* responsible for small device 576px */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 100vh;
+        padding: 40px 20px;
+    }
+
+    .hero-bg .wave-bg {
+        top: 55%;
+        width: 120%;
+        left: -10%;
+    }
+
+    .hero-circle {
+        width: 220px;
+        height: 220px;
+        border-width: 6px;
+        margin-bottom: 16px;
+    }
+
+    .hero-circle img {
+        width: 48px;
+    }
+
+    .badge {
+        top: 8px;
+        right: -6px;
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
+
+/* responsible for large device 992px */
+@media (max-width: 992px) {
+    .hero {
+        min-height: 90vh;
+        padding: 60px 32px;
+    }
+
+    .hero-bg .wave-bg {
+        top: 55%;
+        width: 110%;
+        left: -5%;
+    }
+
+    .hero-circle {
+        width: 260px;
+        height: 260px;
+        border-width: 7px;
+        margin-bottom: 18px;
+    }
+
+    .hero-circle img {
+        width: 54px;
+    }
+
+    .badge {
+        top: 9px;
+        right: -8px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        max-width: 520px;
+        margin: 0 auto 26px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        gap: 14px;
+    }
+
+    .btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+/* the easy about section */
+.about {
+  padding: 100px 20px;
+  text-align: center;
+  background: rgba(26, 11, 46, 1);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+/* .linebar {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 0%;
+    width: 0%;
+} */
+
+.about-text {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-subtext {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 50px;
+  /* padding-top: 60px; */
+  /* margin-top: 50px; */
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat h3 {
+  font-size: 32px;
+  color: #1aff7c;
+  margin-bottom: 5px;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #bbb;
+}
+.xyz {
+    margin-top: 70px;
+}
+
+/* responsible for small device */
+@media (max-width: 576px) {
+  .about {
+    padding: 70px 16px;
+  }
+
+  .about h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-text br {
+    display: none;
+  }
+
+  .about-subtext {
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .xyz {
+    margin-top: 40px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 20px;
+  }
+
+  .stat h3 {
+    font-size: 40px;
+  }
+
+  .stat span {
+    font-size: 12px;
+  }
+  
+}
+/* responsible for large device 992px */
+@media (max-width: 992px) {
+  .about {
+    padding: 90px 24px;
+  }
+
+  .about-container {
+    max-width: 760px;
+  }
+
+  .about h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .about-text br {
+    display: none;
+  }
+
+  .about-subtext {
+    font-size: 14px;
+    margin-bottom: 45px;
+  }
+
+  .xyz {
+    margin-top: 55px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+  }
+
+  .stat h3 {
+    font-size: 30px;
+  }
+
+  .stat span {
+    font-size: 13px;
+  }
 }
