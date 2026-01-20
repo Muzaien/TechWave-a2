@@ -17,6 +17,8 @@
     font-size: 26px;
     font-weight: bold;
     color: white;
+    font-family: Inter;
+    font-style: Extra Bold;
 }
 
 .logo span {
@@ -43,6 +45,8 @@
     color: white;
     margin-left: 20px;
     font-size: 16px;
+    font-family: Inter;
+font-style: Medium;
 }
 
 .subscribe-btn {
@@ -131,7 +135,6 @@
     height: 300px;
     border-radius: 50%;
     /* position: absolute; */
-
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
     display: flex;
     align-items: center;
@@ -142,6 +145,15 @@
     border: 8px solid rgba(42, 24, 108, 1);
 }
 
+.hero-circle span {
+    font-family: Inter;
+font-style: Extra Bold;
+}
+
+.name-zero {
+    font-family: Inter;
+font-style: Extra Bold;
+}
 .hero-circle img {
     width: 60px;
 }
@@ -566,87 +578,35 @@
     }
 }
 
-/* responsible for large device 992px */
+
+/* responsible for why section part r for 992px */
+
 @media (max-width: 992px) {
-    .why-section {
-        padding: 90px 28px;
-    }
-
-    .why-title {
-        font-size: 32px;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .why-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-
-    .card-audio {
-        grid-row: span 2;
-    }
-
-    .card-wide {
-        grid-column: span 2;
-    }
-
-    .why-card {
-        padding: 26px 24px;
-        border-radius: 20px;
-    }
-
-    .why-card img {
-        width: 32px;
-        margin-bottom: 14px;
-    }
-
-    .why-card h3 {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-
-    .why-card p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-}
-
-/* responsible for small device */
-@media (max-width: 576px) {
-
-    .why-section {
-        padding: 2.5rem 1.25rem;
-    }
-
-    .why-title {
-        font-size: 1.75rem;
-    }
-
     .why-grid {
         grid-template-columns: 1fr;
+        /* 1 column */
+        grid-template-rows: repeat(5, auto);
+        /* 5 rows */
+        gap: 20px;
     }
 
-    /* Make all cards same behavior on mobile */
+    /* Reset all custom spans */
+    .why-card-2,
     .card-audio,
     .card-wide {
-        grid-column: auto;
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
-    .why-card,
-    .why-card-2 {
-        padding: 1.5rem;
+    .why-section {
+        padding: 70px 16px;
     }
 
-    .why-card img,
-    .why-card-2 img {
-        width: 40px;
+    .why-title {
+        font-size: 28px;
+        margin-bottom: 40px;
     }
 }
-
-/* responsible for 992px */
-
 
 /* featured section */
 .episodes-section {
@@ -717,7 +677,7 @@
     width: 14px;
 }
 
-/* responsible featured secton */
+/* responsible featured section */
 @media (max-width: 576px) {
 
     .episodes-section {
@@ -766,39 +726,323 @@
 /* responsible for large device 992px */
 @media (max-width: 992px) {
 
-  .episodes-section {
-    padding: 70px 20px;
-  }
+    .episodes-section {
+        padding: 70px 20px;
+    }
 
-  .episodes-title {
-    font-size: 30px;
-    margin-bottom: 45px;
-  }
+    .episodes-title {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
 
-  .episodes-grid {
-    grid-template-columns: 1fr; /* ONE CARD PER ROW */
-    gap: 30px;
-  }
+    .episodes-grid {
+        grid-template-columns: 1fr;
+        /* ONE CARD PER ROW */
+        gap: 30px;
+    }
 
-  .episode-card {
-    padding: 18px;
-  }
+    .episode-card {
+        padding: 18px;
+    }
 
-  .video-wrapper {
-    height: 220px;
-  }
+    .video-wrapper {
+        height: 220px;
+    }
 
-  .episode-card h3 {
-    font-size: 17px;
-    line-height: 1.4;
-  }
+    .episode-card h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
 
-  .episode-card p {
+    .episode-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .episode-time {
+        font-size: 13px;
+    }
+}
+
+/* meet the host section  */
+.host-section {
+    padding: 100px 20px;
+    background: #1a062f;
+}
+
+.host-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+    font-family: Inter;
+    font-style: Bold;
+}
+
+.host-card {
+    max-width: 1100px;
+    margin: auto;
+    background: #2a0f4d;
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image */
+.host-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Content */
+.host-content h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: white;
+    font-family: Inter;
+    font-style: Bold;
+}
+
+.host-content p {
     font-size: 14px;
-    line-height: 1.6;
-  }
+    color: #cfc6dc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-style: Regular;
+}
 
-  .episode-time {
+/* Social Icons */
+.host-socials {
+    display: flex;
+    gap: 14px;
+}
+
+.host-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #6b4fa3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.host-socials img {
+    width: 16px;
+}
+
+/* responsible for small device  */
+@media (max-width: 576px) {
+
+    .host-section {
+        padding: 60px 15px;
+    }
+
+    .host-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .host-card {
+        flex-direction: column;
+        /* STACK CONTENT */
+        padding: 30px 20px;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .host-image img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .host-content h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .host-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .host-socials {
+        justify-content: center;
+    }
+
+    .host-socials a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .host-socials img {
+        width: 15px;
+    }
+}
+
+/* responsible for large device 992px */
+@media (max-width: 992px) {
+
+    .host-section {
+        padding: 80px 20px;
+    }
+
+    .host-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .host-card {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .host-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .host-content h3 {
+        font-size: 24px;
+    }
+
+    .host-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+/* foot section  */
+.footer {
+    background: #2c0d50;
+    padding: 80px 20px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Wave background */
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("./assets/footer-bg.png") no-repeat center;
+    background-size: cover;
+    opacity: 0.25;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Inter;
+    font-style: Regular;
+}
+
+.footer-logo span {
+    color: #ff3cac;
+
+}
+
+/* Platforms */
+.footer-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-platforms img {
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Copyright */
+.footer-text {
     font-size: 13px;
-  }
+    color: #cfc6dc;
+}
+
+.footer p {
+    color: white;
+    font-family: Inter;
+    font-style: Regular;
+}
+
+/* responsible for small device  */
+@media (max-width: 576px) {
+
+    .footer {
+        padding: 60px 15px 35px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .footer-platforms {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 14px 30px;
+        margin-bottom: 25px;
+    }
+
+    .footer-platforms img {
+        width: 18px;
+    }
+
+    /* Platform text labels */
+    .footer-platforms img::after {
+        content: "";
+    }
+
+    .footer-text {
+        font-size: 12px;
+        line-height: 1.6;
+        color: #bfb8cc;
+    }
+}
+
+/* responsible for large device */
+@media (max-width: 992px) {
+
+    .footer {
+        padding: 70px 20px 40px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .footer-platforms {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        margin-bottom: 30px;
+    }
+
+    .footer-platforms img {
+        width: 20px;
+    }
+
+    .footer-text {
+        font-size: 13px;
+        color: #cfc6dc;
+    }
 }
