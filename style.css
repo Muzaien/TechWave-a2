@@ -33,12 +33,23 @@
     background-clip: text;
     color: transparent;
 }
+a.subscribe-btn {
+    text-decoration: none !important;
+}
 
 .nav-links {
     display: flex;
-    align-items: center;
-    /* justify-content: center; */
+    gap: 24px;
+    margin: 0 auto;
+    text-decoration: none;
 }
+
+
+/* .nav-links {
+    display: flex;
+    align-items: center;
+  
+} */
 
 .nav-links a {
     text-decoration: none;
@@ -47,12 +58,16 @@
     font-size: 16px;
     font-family: Inter;
 font-style: Medium;
+
 }
 
 .subscribe-btn {
     padding: 10px 22px;
     border-radius: 25px;
     background: linear-gradient(45deg, #F7E93F, #ff3cac, #784ba0);
+    font-family: Inter;
+font-style: Semi Bold;
+color: white
 
 }
 
@@ -328,7 +343,8 @@ font-style: Extra Bold;
 .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: white;
+    color: white;font-family: Inter;
+font-style: Bold;
 }
 
 /* .linebar {
@@ -343,12 +359,16 @@ font-style: Extra Bold;
     color: #ccc;
     line-height: 1.7;
     margin-bottom: 15px;
+    font-family: Inter;
+font-style: Regular;
 }
 
 .about-subtext {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 50px;
+ font-family: Inter;
+font-style: Regular;
     /* padding-top: 60px; */
     /* margin-top: 50px; */
 }
@@ -363,11 +383,15 @@ font-style: Extra Bold;
     font-size: 32px;
     color: #1aff7c;
     margin-bottom: 5px;
+    font-family: Inter;
+font-style: Black;
 }
 
 .stat span {
     font-size: 13px;
     color: #bbb;
+    font-family: Inter;
+font-style: Regular;
 }
 
 .xyz {
@@ -475,7 +499,8 @@ font-style: Extra Bold;
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: white;
+    color: white;font-family: Inter;
+font-style: Bold;
 }
 
 .why-grid {
@@ -494,6 +519,10 @@ font-style: Extra Bold;
     border-radius: 20px;
 
 }
+.whycard-h3 {
+    font-family: Inter;
+font-style: Bold;
+}
 
 .why-card-2 {
     grid-column: span 2;
@@ -503,8 +532,12 @@ font-style: Extra Bold;
     padding-right: 20px;
     border-radius: 25px;
     color: white;
+   
 }
-
+.why-card-2 p {
+    font-family: Inter;
+font-style: Regular;
+}
 .why-card img {
     width: 34px;
     margin-bottom: 16px;
@@ -514,12 +547,17 @@ font-style: Extra Bold;
     font-size: 18px;
     margin-bottom: 10px;
     color: white;
+    font-family: Inter;
+    font-style: Bold;
 }
+
 
 .why-card p {
     font-size: 14px;
     color: #cfc6dc;
     line-height: 1.6;
+    font-family: Inter;
+font-style: Regular;
 }
 
 
@@ -651,6 +689,10 @@ font-style: Extra Bold;
 }
 
 /* Text */
+.episodes-section {
+    font-family: Inter;
+    font-style: Bold; 
+}
 .episode-card h3 {
     font-size: 18px;
     margin-bottom: 8px;
