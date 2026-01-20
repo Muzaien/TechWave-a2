@@ -480,6 +480,16 @@
     background: #2a0f4d;
     padding: 32px;
     border-radius: 20px;
+    
+}
+.why-card-2 {
+    grid-column: span 2;
+    background: #2a0f4d;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    color: white;
 }
 
 .why-card img {
@@ -600,3 +610,36 @@
     line-height: 1.6;
   }
 }
+/* responsible for small device */
+@media (max-width: 576px) {
+
+    .why-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .why-title {
+        font-size: 1.75rem;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make all cards same behavior on mobile */
+    .card-audio,
+    .card-wide {
+        grid-column: auto;
+    }
+
+    .why-card,
+    .why-card-2 {
+        padding: 1.5rem;
+    }
+
+    .why-card img,
+    .why-card-2 img {
+        width: 40px;
+    }
+}
+/* responsible for 992px */
+
