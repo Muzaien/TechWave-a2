@@ -107,7 +107,7 @@
     text-align: center;
     overflow: hidden;
     background-color: rgba(26, 11, 46, 1);
-    
+
 }
 
 .hero-bg .wave-bg {
@@ -117,7 +117,7 @@
     left: 0;
     transform: translateY(-50%);
     opacity: 0.8;
-    
+
 }
 
 .hero-content {
@@ -191,6 +191,7 @@
     border: 2px solid #1aff7c;
     color: #1aff7c;
 }
+
 /* responsible for small device 576px */
 @media (max-width: 576px) {
     .hero {
@@ -302,21 +303,22 @@
 
 /* the easy about section */
 .about {
-  padding: 100px 20px;
-  text-align: center;
-  background: rgba(26, 11, 46, 1);
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(26, 11, 46, 1);
 }
 
 .about-container {
-  max-width: 900px;
-  margin: auto;
+    max-width: 900px;
+    margin: auto;
 }
 
 .about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
 }
+
 /* .linebar {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -325,126 +327,276 @@
 } */
 
 .about-text {
-  font-size: 15px;
-  color: #ccc;
-  line-height: 1.7;
-  margin-bottom: 15px;
+    font-size: 15px;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
 .about-subtext {
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 50px;
-  /* padding-top: 60px; */
-  /* margin-top: 50px; */
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 50px;
+    /* padding-top: 60px; */
+    /* margin-top: 50px; */
 }
 
 .about-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 .stat h3 {
-  font-size: 32px;
-  color: #1aff7c;
-  margin-bottom: 5px;
+    font-size: 32px;
+    color: #1aff7c;
+    margin-bottom: 5px;
 }
 
 .stat span {
-  font-size: 13px;
-  color: #bbb;
+    font-size: 13px;
+    color: #bbb;
 }
+
 .xyz {
     margin-top: 70px;
 }
 
 /* responsible for small device */
 @media (max-width: 576px) {
-  .about {
+    .about {
+        padding: 70px 16px;
+    }
+
+    .about h2 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .about-text br {
+        display: none;
+    }
+
+    .about-subtext {
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+    .xyz {
+        margin-top: 40px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 20px;
+    }
+
+    .stat h3 {
+        font-size: 40px;
+    }
+
+    .stat span {
+        font-size: 12px;
+    }
+
+}
+
+/* responsible for large device 992px */
+@media (max-width: 992px) {
+    .about {
+        padding: 90px 24px;
+    }
+
+    .about-container {
+        max-width: 760px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .about-text br {
+        display: none;
+    }
+
+    .about-subtext {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .xyz {
+        margin-top: 55px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 30px;
+    }
+
+    .stat h3 {
+        font-size: 30px;
+    }
+
+    .stat span {
+        font-size: 13px;
+    }
+}
+
+/* the complex Why Choose Section */
+.why-section {
+    padding: 100px 20px;
+    background: #1a062f;
+}
+
+.why-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.why-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 30px;
+}
+
+/* Card Base */
+.why-card {
+    background: #2a0f4d;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+.why-card img {
+    width: 34px;
+    margin-bottom: 16px;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.why-card p {
+    font-size: 14px;
+    color: #cfc6dc;
+    line-height: 1.6;
+}
+
+
+.card-audio {
+    grid-row: span 2;
+}
+
+
+.card-wide {
+    grid-column: span 2;
+}
+/* responsible for small device 576px */
+@media (max-width: 576px) {
+  .why-section {
     padding: 70px 16px;
   }
 
-  .about h2 {
+  .why-title {
     font-size: 26px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    text-align: center;
   }
 
-  .about-text {
-    font-size: 14px;
-    line-height: 1.6;
+  .why-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
-  .about-text br {
-    display: none;
+  .why-card {
+    padding: 22px 20px;
+    border-radius: 18px;
   }
 
-  .about-subtext {
-    font-size: 13px;
-    margin-bottom: 40px;
-  }
-
-  .xyz {
-    margin-top: 40px;
-  }
-
-  .about-stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 20px;
-  }
-
-  .stat h3 {
-    font-size: 40px;
-  }
-
-  .stat span {
-    font-size: 12px;
-  }
   
+  .card-audio,
+  .card-wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .why-card img {
+    width: 28px;
+    margin-bottom: 12px;
+  }
+
+  .why-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
+
 /* responsible for large device 992px */
 @media (max-width: 992px) {
-  .about {
-    padding: 90px 24px;
+  .why-section {
+    padding: 90px 28px;
   }
 
-  .about-container {
-    max-width: 760px;
-  }
-
-  .about h2 {
+  .why-title {
     font-size: 32px;
-    margin-bottom: 18px;
+    margin-bottom: 40px;
+    text-align: center;
   }
 
-  .about-text {
-    font-size: 15px;
-    line-height: 1.65;
-  }
-
-  .about-text br {
-    display: none;
-  }
-
-  .about-subtext {
-    font-size: 14px;
-    margin-bottom: 45px;
-  }
-
-  .xyz {
-    margin-top: 55px;
-  }
-
-  .about-stats {
+  .why-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 30px;
+    gap: 24px;
   }
 
-  .stat h3 {
-    font-size: 30px;
+  
+  .card-audio {
+    grid-row: span 2;
   }
 
-  .stat span {
-    font-size: 13px;
+  .card-wide {
+    grid-column: span 2;
+  }
+
+  .why-card {
+    padding: 26px 24px;
+    border-radius: 20px;
+  }
+
+  .why-card img {
+    width: 32px;
+    margin-bottom: 14px;
+  }
+
+  .why-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .why-card p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
