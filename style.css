@@ -33,6 +33,7 @@
     background-clip: text;
     color: transparent;
 }
+
 a.subscribe-btn {
     text-decoration: none !important;
 }
@@ -57,7 +58,7 @@ a.subscribe-btn {
     margin-left: 20px;
     font-size: 16px;
     font-family: Inter;
-font-style: Medium;
+    font-style: Medium;
 
 }
 
@@ -66,14 +67,28 @@ font-style: Medium;
     border-radius: 25px;
     background: linear-gradient(45deg, #F7E93F, #ff3cac, #784ba0);
     font-family: Inter;
-font-style: Semi Bold;
-color: white
+    font-style: Semi Bold;
+    color: white
+}
+
+.menuicon {
+    display: none;
 
 }
 
 /* responsible for small device 576px */
 
 @media (max-width: 576px) {
+    a.subscribe-btn {
+        display: none;
+
+    }
+
+    .menuicon {
+        display: inline-block;
+        background-color: rgba(26, 11, 46, 1);
+
+    }
 
     .nav-links {
         display: none;
@@ -85,6 +100,10 @@ color: white
 
     .logo {
         font-size: 20px;
+    }
+
+    .nav a {
+        display: none;
     }
 
 
@@ -162,13 +181,14 @@ color: white
 
 .hero-circle span {
     font-family: Inter;
-font-style: Extra Bold;
+    font-style: Extra Bold;
 }
 
 .name-zero {
     font-family: Inter;
-font-style: Extra Bold;
+    font-style: Extra Bold;
 }
+
 .hero-circle img {
     width: 60px;
 }
@@ -201,7 +221,7 @@ font-style: Extra Bold;
     justify-content: center;
     gap: 15px;
     font-family: Inter;
-font-style: Semi Bold;
+    font-style: Semi Bold;
 }
 
 .btn {
@@ -345,8 +365,9 @@ font-style: Semi Bold;
 .about h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: white;font-family: Inter;
-font-style: Bold;
+    color: white;
+    font-family: Inter;
+    font-style: Bold;
 }
 
 /* .linebar {
@@ -362,15 +383,15 @@ font-style: Bold;
     line-height: 1.7;
     margin-bottom: 15px;
     font-family: Inter;
-font-style: Regular;
+    font-style: Regular;
 }
 
 .about-subtext {
     font-size: 14px;
     color: #aaa;
     margin-bottom: 50px;
- font-family: Inter;
-font-style: Regular;
+    font-family: Inter;
+    font-style: Regular;
     /* padding-top: 60px; */
     /* margin-top: 50px; */
 }
@@ -386,14 +407,14 @@ font-style: Regular;
     color: #1aff7c;
     margin-bottom: 5px;
     font-family: Inter;
-font-style: Black;
+    font-style: Black;
 }
 
 .stat span {
     font-size: 13px;
     color: #bbb;
     font-family: Inter;
-font-style: Regular;
+    font-style: Regular;
 }
 
 .xyz {
@@ -501,8 +522,9 @@ font-style: Regular;
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: white;font-family: Inter;
-font-style: Bold;
+    color: white;
+    font-family: Inter;
+    font-style: Bold;
 }
 
 .why-grid {
@@ -521,9 +543,10 @@ font-style: Bold;
     border-radius: 20px;
 
 }
+
 .whycard-h3 {
     font-family: Inter;
-font-style: Bold;
+    font-style: Bold;
 }
 
 .why-card-2 {
@@ -534,12 +557,14 @@ font-style: Bold;
     padding-right: 20px;
     border-radius: 25px;
     color: white;
-   
+
 }
+
 .why-card-2 p {
     font-family: Inter;
-font-style: Regular;
+    font-style: Regular;
 }
+
 .why-card img {
     width: 34px;
     margin-bottom: 16px;
@@ -559,7 +584,7 @@ font-style: Regular;
     color: #cfc6dc;
     line-height: 1.6;
     font-family: Inter;
-font-style: Regular;
+    font-style: Regular;
 }
 
 
@@ -576,6 +601,10 @@ font-style: Regular;
 @media (max-width: 576px) {
     .why-section {
         padding: 70px 16px;
+    }
+
+    .why-card-2 {
+        padding-bottom: 40px;
     }
 
     .why-title {
@@ -638,6 +667,10 @@ font-style: Regular;
         grid-row: span 1;
     }
 
+    .why-card-2 {
+        padding-bottom: 40px;
+    }
+
     .why-section {
         padding: 70px 16px;
     }
@@ -693,8 +726,9 @@ font-style: Regular;
 /* Text */
 .episodes-section {
     font-family: Inter;
-    font-style: Bold; 
+    font-style: Bold;
 }
+
 .episode-card h3 {
     font-size: 18px;
     margin-bottom: 8px;
